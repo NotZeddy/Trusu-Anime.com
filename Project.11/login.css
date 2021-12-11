@@ -1,0 +1,140 @@
+body {
+  background-image: url(uwubg.png);
+  background-repeat: no-repeat;
+  color: white;
+  background-size: 100%;
+  overflow: hidden;
+
+}
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+}
+.logincontainer {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+
+  width: 40%;
+  border-radius: 20px;
+  padding: 3% 0;
+  margin-top: -150px;
+}
+
+.login h1 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 8%;
+  font-size: 45px;
+  color: #fff;
+}
+.formcontainer {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 70%;
+  padding-bottom: 5%;
+  margin: auto;
+}
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+  width: 100%;
+  padding: 15px;
+}
+input[type="submit"] {
+  background: #ffc119;
+  border-radius: 20px;
+}
+input[type="submit"]:hover {
+  background-color: rgba(255, 193, 25, 0.5);
+}
+
+.username,
+.password,
+.remember {
+  line-height: 40px;
+  color: #fff;
+  text-shadow: black 1px 1px 5px;
+}
+.username,
+.password {
+  line-height: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.new {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 70%;
+  margin: auto;
+  padding-bottom: 5%;
+  text-shadow: black 1px 1px 5px;
+}
+.new a {
+  text-decoration: none;
+  color: #fff;
+  line-height: 30px;
+}
+
+.new a:hover {
+  text-decoration: underline;
+}
+.bottom {
+  padding: 8% 0 6% 0;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  width: 70%;
+  margin: auto;
+  color: #ffc119;
+  text-shadow: black 2px 2px 5px;
+  font-size: 18px;
+  margin-top: -20px;
+}
+.bottom > span,
+a {
+  text-decoration: none;
+  color: currentColor;
+  color: white;
+}
+.bottom > .span,
+a:hover {
+  text-decoration: underline;
+}
+@media only screen and (max-width: 1000px) {
+  /* For tablets: */
+  .logincontainer {
+    width: 60%;
+    padding: 0;
+  }
+  body {
+    background-image: none;
+  }
+}
+@media only screen and (max-width: 900px) {
+  /* For tablets: */
+  .logincontainer {
+    width: 70%;
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 800px) {
+  /* For tablets: */
+  .logincontainer {
+    width: 80%;
+    padding: 0;
+  }
+  body {
+    background-image: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* For tablets: */
+  .logincontainer {
+    width: 0%;
+    padding: 0;
+  }
+}
